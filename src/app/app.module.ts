@@ -20,6 +20,7 @@ import { AboutUsComponent } from './modules/about-us/about-us/about-us.component
 import { HomeComponent } from './modules/home/home/home.component';
 import { BlogEntriesComponent } from './modules/blog-entries/blog-entries/blog-entries.component';
 import { PostDetailsComponent } from './modules/post-details/post-details/post-details.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PostDetailsComponent } from './modules/post-details/post-details/post-d
     AboutUsComponent,
     HomeComponent,
     BlogEntriesComponent,
-    PostDetailsComponent
+    PostDetailsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
