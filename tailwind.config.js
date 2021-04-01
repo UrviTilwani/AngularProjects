@@ -7,10 +7,16 @@ module.exports = {
   },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      textColor: theme => theme('colors'),
+       textColor: {
+         'primary': '#f48840',
+       }
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [require('@tailwindcss/forms'),require('@tailwindcss/typography')],
 };
