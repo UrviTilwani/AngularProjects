@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-send-us-message',
@@ -11,5 +11,6 @@ export class SendUsMessageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  @Input() title:String="";
 
 }

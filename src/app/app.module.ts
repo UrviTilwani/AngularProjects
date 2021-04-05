@@ -21,7 +21,13 @@ import { HomeComponent } from './modules/home/home/home.component';
 import { BlogEntriesComponent } from './modules/blog-entries/blog-entries/blog-entries.component';
 import { PostDetailsComponent } from './modules/post-details/post-details/post-details.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found/page-not-found.component';
-
+import { ContactUsComponent } from './modules/contact-us/contact-us/contact-us.component';
+import { SendUsMessageComponent } from './modules/contact-us/components/send-us-message/send-us-message.component';
+import { ContactInfoComponent } from './modules/contact-us/components/contact-info/contact-info.component';
+import { AddressMapComponent } from './modules/contact-us/components/address-map/address-map.component';
+import { BlogEntriesPostComponent } from './modules/blog-entries/components/blog-entries-post/blog-entries-post.component';
+import { CommentsComponent } from './modules/post-details/components/comments/comments.component';
+import { CommentComponent } from './modules/post-details/components/comment/comment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +48,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found/page-not-
     HomeComponent,
     BlogEntriesComponent,
     PostDetailsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ContactUsComponent,
+    SendUsMessageComponent,
+    ContactInfoComponent,
+    AddressMapComponent,
+    BlogEntriesPostComponent,
+    CommentsComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,

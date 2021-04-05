@@ -1,1 +1,58 @@
-<p>blog-entries works!</p>
+<app-module-banner module_title="RECENT POSTS" module_desc="OUR RECENT BLOG ENTRIES" ></app-module-banner>
+<app-template-banner></app-template-banner>
+
+<div class="flex justify-center   space-x-0.05 w-12/12 space-y-24 ">
+
+    <div class="w-5/12 h-4/6">
+    <div class=" w-full  flex flex-row space-x-2">
+
+    <app-blog-entries-post post_picture="/assets/blog-thumb-01.jpg" post_title="LIFESTYLE" post_decsription="Donec Tincidunt Leo"
+        post_admin="Admin  |" post_date="  May 31, 2020  |" post_comment="  12 comments" post_content="Nullam nibh mi, tincidunt sed sapien ut, rutrum
+         hendrerit velit. Integer auctor a mauris sit amet eleifend."
+        post_tag="Beauty, Nature" >
+    </app-blog-entries-post> 
+
+    <app-blog-entries-post post_picture="/assets/blog-thumb-02.jpg" post_title="LIFESTYLE" post_decsription="Suspendisse Et Metus"
+        post_admin="Admin  |" post_date="  May 22, 2020  |" post_comment="  26 comments" post_content="Nullam nibh mi, tincidunt sed sapien ut, rutrum 
+        hendrerit velit. Integer auctor a mauris sit amet eleifend. "
+        post_tag="Beauty, Nature"
+     ></app-blog-entries-post> 
+
+     
+    </div>
+    <div class="flex flex-row space-x-3">
+    <app-blog-entries-post post_picture="/assets/blog-thumb-03.jpg" post_title="LIFESTYLE" post_decsription="Donec Tincidunt Leo"
+    post_admin="Admin  |" post_date="  May 18, 2020  |" post_comment="  42 comments" post_content="Nullam nibh mi, tincidunt sed sapien ut, rutrum 
+    hendrerit velit. Integer auctor a mauris sit amet eleifend. "
+    post_tag="Beauty, Nature"></app-blog-entries-post> 
+    
+    <app-blog-entries-post post_picture="/assets/blog-thumb-04.jpg" post_title="LIFESTYLE" post_decsription="Mauris Ac Dolor Ornare"
+    post_admin="Admin  |" post_date="  May 16, 2020  |" post_comment="  28 comments" post_content="Nullam nibh mi, tincidunt sed sapien ut, rutrum 
+    hendrerit velit. Integer auctor a mauris sit amet eleifend. "
+    post_tag="Beauty, Nature"></app-blog-entries-post> 
+
+    </div>
+
+    <div class="flex flex-row space-x-3">
+        <app-blog-entries-post post_picture="/assets/blog-thumb-05.jpg" post_title="LIFESTYLE" post_decsription="Donec Tincidunt Leo"
+        post_admin="Admin  |" post_date="  May 12, 2020  |" post_comment="  16 comments" post_content="Nullam nibh mi, tincidunt sed sapien ut, rutrum 
+        hendrerit velit. Integer auctor a mauris sit amet eleifend. "
+        post_tag="Beauty, Nature"></app-blog-entries-post> 
+        
+        <app-blog-entries-post post_picture="/assets/blog-thumb-06.jpg" post_title="LIFESTYLE" post_decsription="Suspendisse Et Metus"
+        post_admin="Admin  |" post_date="  May 10, 2020  |" post_comment="  3 comments" post_content="Nullam nibh mi, tincidunt sed sapien ut, rutrum 
+        hendrerit velit. Integer auctor a mauris sit amet eleifend. "
+        post_tag="Beauty, Nature"></app-blog-entries-post> 
+    
+        </div>
+</div>
+
+
+    <div class="flex flex-col w-96 pl-24">
+    <app-post-search></app-post-search>
+    <app-recent-post></app-recent-post>
+    <app-catagories></app-catagories>
+    <app-tag-clouds></app-tag-clouds>
+    </div>
+</div>
+

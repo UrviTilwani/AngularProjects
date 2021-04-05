@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-blog-entries-post',
@@ -11,5 +11,13 @@ export class BlogEntriesPostComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  @Input() post_picture : string ="";
+  @Input() post_title : string="";
+  @Input() post_decsription : string="";
+  @Input() post_admin : string="";
+  @Input() post_date : string="";
+  @Input() post_comment : string="";
+  @Input() post_content : string="";
+  @Input() post_tag : string="";
 
 }

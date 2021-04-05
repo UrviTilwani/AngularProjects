@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/app/app.component.css" />
-  </head>
-  <body class="bg-gray-100">
 
-    <nav class="container mx-auto flex flex-row p-8 px-10 items-center" >
+  <body class="bg-white ">
+    <div class="bg-gray-100 sticky top-0 z-30">
+    <nav class="container mx-auto flex flex-row  p-8 px-10 items-center" >
 
       <div class="font-bold text-2xl pl-40 tracking-normal">
         <a href="#">STAND BLOG <span class="text-red-600 opacity-75 text-4xl">.</span> </a>
@@ -16,17 +9,17 @@
 
       <div class="font-semibold text-md ml-auto pt-2 pb-2 mx-44 text-black">
        
-        <a routerLink="/home" class="mr-12 text-red-600 opacity-90">HOME</a>
-        <a routerLink="/about-us" class="mr-12 hover:text-red-600 hover:opacity-60" >ABOUT US</a>
-        <a routerLink="/blog-entries" class="mr-12 hover:text-red-600 hover:opacity-60">BLOG ENTRIES</a>
-        <a routerLink="/post-details" class="mr-12 hover:text-red-600 hover:opacity-60">POST DETAILS</a>
-        <a routerLink="/contact-us" class="mr-12 hover:text-red-600 hover:opacity-60">CONTACT US</a>
+        <a routerLink="/home" routerLinkActive="active" class="mr-12 hover:text-primary opacity-90">HOME</a>
+        <a routerLink="/about-us" routerLinkActive="active" class="mr-12 hover:text-primary hover:opacity-60" >ABOUT US</a>
+        <a routerLink="/blog-entries"  routerLinkActive="active" class="mr-12 hover:text-primary hover:opacity-60">BLOG ENTRIES</a>
+        <a routerLink="/post-details"routerLinkActive="active" class="mr-12 hover:text-primary hover:opacity-60">POST DETAILS</a>
+        <a routerLink="/contact-us"routerLinkActive="active" class="mr-12 hover:text-primary hover:opacity-60">CONTACT US</a>
 
       </div>
     </nav>
+  </div>
+  <router-outlet></router-outlet>
 
 
   </body>
-  <router-outlet></router-outlet>
 
-</html>

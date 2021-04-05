@@ -1,1 +1,41 @@
-<p>send-us-message works!</p>
+<div class="space-y-10 w-full pt-16 pb-5 px-64">
+
+<div>
+    <h1 class="text-lg tracking-wide  border-b border-gray-200
+ font-semibold pb-3 text-black">{{title}}</h1>
+</div>
+
+<div>
+<form action="">
+    <div class="space-x-5  flex flex-row space-x-5 w-11/12">
+    <input type="text" placeholder="YOUR NAME" 
+    class="placeholder-opacity-25 border-1 p-2.5 border-gray-300 text-sm w-72
+    outline-none focus:outline-none" >
+
+    <input type="email" placeholder="YOUR EMAIL" 
+    class="placeholder-opacity-25 border-1 p-2.5 border-gray-300 text-sm w-96
+    outline-none focus:outline-none" >
+    </div>
+    <br> 
+    <div class="w-8/12 pr-16">
+    <input type="text" placeholder="SUBJECT" 
+    class="placeholder-opacity-25 border-1 p-2.5  border-gray-300 text-sm w-full
+    outline-none focus:outline-none" >
+    <br> <br>
+  </div>
+
+    <div class=" w-8/12 pr-16">
+        <div class="relative">
+          <textarea id="message" placeholder="YOUR MESSAGE" name="message" class="w-full bg-opacity-50 
+          rounded border border-1 border-gray-300 text-sm bg-white focus:ring-2 focus:ring-indigo-200 
+          h-32 outline-none text-gray-700 py-1 px-2 resize-none leading-6 transition-colors ease-in-out"></textarea>
+        </div>
+      </div>
+
+      <div class="pt-5 w-full pb-24">
+        <button class="flex  text-white bg-yellow-500 border-0
+         py-3 px-5 focus:outline-none  text-sm font-semibold">SEND MESSAGE</button>
+      </div>
+
+</form>
+</div></div>

@@ -1,6 +1,42 @@
-<app-header></app-header>
 <div class="flex flex-row">
 <app-carousel picture1="https://templatemo.com/templates/templatemo_551_stand_blog/assets/images/banner-item-01.jpg" title1="FASHION" desc="Morbi Dapibus Condimentum" row1="Admin  |" row2="  May 12,2020  |" row3="  12 Comments" ></app-carousel>
 <app-carousel picture1="https://templatemo.com/templates/templatemo_551_stand_blog/assets/images/banner-item-02.jpg" title1="NATURE" desc="Donec Porttitor Augue At Velit" row1="Admin  |" row2="  May 24,2020  |" row3="  20 Comments" ></app-carousel>
 <app-carousel picture1="https://templatemo.com/templates/templatemo_551_stand_blog/assets/images/banner-item-03.jpg" title1="LIFESTYLE" desc="Best HTML Templates On TemplateMo" row1="Admin  |" row2="  May 12,2020  |" row3="  12 Comments" ></app-carousel>
 </div>
+
+<app-template-banner></app-template-banner>
+
+<div class="flex flex-row space-x-0.05 space-y-24 ">
+<div class="w-8/12">
+<app-blog-post post_picture="/assets/blog-post-01.jpg" post_title="LIFESTYLE" post_decsription="Best Template Website For HTML CSS"
+    post_admin="Admin  |" post_date="  May 31, 2020  |" post_comment="  12 comments" post_content="Stand Blog is a free HTML CSS template for your CMS theme. You can easily adapt or customize 
+     it for any kind of CMS or website builder. You are allowed to use it for your business. You are NOT allowed to re-distribute the template ZIP file on any template collection site for the download purpose. Contact TemplateMo  for more info. Thank you."
+    post_tag="Beauty, Nature" post_share="Facebook, Twitter"
+ ></app-blog-post> 
+
+ <app-blog-post post_picture="/assets/blog-post-02.jpg" post_title="HEALTHY" post_decsription="Etiam Id Diam Vitae Lorem Dictum"
+    post_admin="Admin  |" post_date="  May 24, 2020  |" post_comment="  36 comments" post_content="You can support us by contributing a little via PayPal. Please contact TemplateMo via Live Chat or Email. If you have any question or feedback about 
+    this template, feel free to talk to us. Also, you may check other CSS templates such as multi-page, resume, video, etc."
+    post_tag="Best Templates, TemplateMo" post_share="Facebook, Twitter"
+ ></app-blog-post> 
+
+ <app-blog-post post_picture="/assets/blog-post-03.jpg" post_title="FASHION" post_decsription="Donec Tincidunt Leo Nec Magna"
+    post_admin="Admin  |" post_date="  May 14, 2020  |" post_comment="  48 comments" post_content="Nullam at quam ut lacus aliquam tempor vel sed ipsum. Donec pellentesque tincidunt imperdiet. Mauris sit amet justo vulputate, cursus massa congue,
+     vestibulum odio. Aenean elit nunc, gravida in erat sit amet, feugiat viverra leo. Phasellus interdum, diam commodo egestas rhoncus, turpis nisi consectetur nibh, in vehicula eros orci vel neque."
+    post_tag=" HTML CSS, Photoshop" post_share="Facebook, Twitter"
+ ></app-blog-post> 
+
+ <div class="flex justify-center items-center h-14 w-7/12 mt-7 mb-20 bg-yellow-600 text-white text-sm
+  ml-72 font-medium tracking-wide rounded-sm">
+    <a href="#">VIEW ALL POSTS</a>
+</div>
+</div>
+
+<div class="flex flex-col w-80  ">
+<app-post-search></app-post-search>
+<app-recent-post></app-recent-post>
+<app-catagories></app-catagories>
+<app-tag-clouds></app-tag-clouds>
+</div>
+</div>
+

@@ -1,1 +1,31 @@
-<p>post-details works!</p>
+<app-module-banner module_title="POST DETAILS" module_desc="SINGLE BLOG POST" ></app-module-banner>
+<app-template-banner></app-template-banner>
+
+<div class="flex flex-row space-x-0.05 space-y-24 ">
+    <div class="w-8/12">
+    <app-blog-post post_picture="/assets/blog-post-02.jpg" post_title="LIFESTYLE" post_decsription="Aenean Pulvinar Gravida Sem Nec"
+        post_admin="Admin  |" post_date="  May 12, 2020  |" post_comment="  12 comments" 
+        post_content="You can browse different tags such as multi-page, resume, video, etc. to see more CSS templates. Sed hendrerit rutrum arcu, non malesuada nisi. Sed id facilisis turpis. Donec justo elit, dapibus vel ultricies in, molestie sit amet risus. In nunc augue, rhoncus sed libero et, tincidunt tempor nisl. Donec egestas, quam eu rutrum ultrices, sapien ante posuere nisl, ac eleifend eros orci vel ante. Pellentesque vitae eleifend velit. Etiam blandit felis sollicitudin vestibulum feugiat.
+
+        Donec tincidunt leo nec magna gravida varius. Suspendisse felis orci, egestas ac sodales quis, venenatis et neque. Vivamus facilisis dignissim arcu et blandit. Maecenas finibus dui non pulvinar lacinia. Ut lacinia finibus lorem vel porttitor. Suspendisse et metus nec libero ultrices varius eget in risus. Cras id nibh at erat pulvinar malesuada et non ipsum. Suspendisse id ipsum leo."
+        post_tag="Beauty, Nature"
+        
+        post_share="Facebook, Twitter"
+     ></app-blog-post> 
+    
+     <div class="flex justify-center items-center h-14 w-7/12 mt-7 mb-20 bg-yellow-600 text-white text-sm
+      ml-72 font-medium tracking-wide rounded-sm">
+        <a href="#">VIEW ALL POSTS</a>
+    </div>
+    </div>
+    
+    <div class="flex flex-col w-80  ">
+    <app-post-search></app-post-search>
+    <app-recent-post></app-recent-post>
+    <app-catagories></app-catagories>
+    <app-tag-clouds></app-tag-clouds>
+    </div>
+    </div>
+
+<app-comments></app-comments>
+    <app-send-us-message title="YOUR COMMENT"></app-send-us-message>
