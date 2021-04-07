@@ -12,14 +12,16 @@ export class BlogPostComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Input() post_picture : string ="";
-  @Input() post_title : string="";
-  @Input() post_decsription : string="";
-  @Input() post_admin : string="";
-  @Input() post_date : string="";
-  @Input() post_comment : string="";
-  @Input() post_content : string="";
-  @Input() post_tag : string="";
-  @Input() post_share : string="";
+  // @Input() post_picture : string ="";
+  // @Input() post_title : string="";
+  // @Input() post_decsription : string="";
+  // @Input() post_content : string="";
+  // @Input() post_admin : string="";
+  // @Input() post_date : string="";
+  // @Input() post_comment : string="";
+  // @Input() post_tag : string="";
+  // @Input() post_share : string="";
+
+  
 
 }

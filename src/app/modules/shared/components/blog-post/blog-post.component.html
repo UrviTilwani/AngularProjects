@@ -1,27 +1,30 @@
-<div class="flex flex-col justify-center pl-40 items-center  w-full" >
+<div class="flex flex-col justify-center pl-40 items-center w-full" >
 
 <div class="border-2 border-gray-300 mt-24 w-9/12">
-    <img class="w-full h-80" src="{{post_picture}}" alt="picture not found">
-
-    <div class="container ml-10">
+    <ng-content select=".post_picture"></ng-content>
+<div class="container ml-10">
         <h2
         class="text-primary mt-10 text-lg mb-2 font-extrabold tracking-wide">
-        {{ post_title}}
+        <ng-content select=".post_title"></ng-content>
         </h2>
-        <a href="#" class="text-xl tracking-wide font-semibold text-black">{{post_decsription }}</a> <br />
-        <div class="text-gray-400 text-sm font-normal mt-3 ">
-        <a href="#">{{ post_admin }}</a>
-        <a href="#">{{ post_date }}</a>
-        <a href="#">{{ post_comment }}</a>
-        </div>
+        
+    <a href="#" class="text-xl tracking-wide font-semibold text-black">
+        <ng-content select=".post_decsription"></ng-content> </a> <br/>
+
+
+       <div class="text-gray-400 text-sm font-normal mt-3 flex"> 
+        <a href=""><ng-content select=".post_admin"></ng-content></a>
+        <a href=""> <ng-content select=".post_date"></ng-content></a>
+        <a href="#"><ng-content select=".post_comment"></ng-content></a></div>
         <br>
        
-        <div class="border-b border-gray-200 w-11/12"></div>
+         <div class="border-b border-gray-200 w-11/12"></div>
         
         <br>
 
         <p class="w-11/12 pr-9 text-left text-gray-600  
-        text-sm font-normal leading-7 ">{{ post_content }}</p>
+        text-sm font-normal leading-7 ">
+        <ng-content select=".post_content"></ng-content></p>
         <br>
         <div class="border-b border-gray-200 w-11/12"></div>
 
@@ -30,14 +33,16 @@
                 <svg class="w-6 text-primary " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                   </svg>
-                <li class="text-gray-400 text-sm "><a href="#">{{post_tag}}</a></li>
+                <li class="text-gray-400 text-sm ">
+                    <a href="#"><ng-content select=".post_tag"></ng-content>
+                </a></li>
             </ul>
 
             <ul class="flex ml-64 space-x-2">
                 <svg class="w-5 text-primary " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
                   </svg>
-                <li class="text-gray-400 text-sm"><a href="#">{{post_share}}</a></li>
+                <li class="text-gray-400 text-sm"><a href="#"><ng-content select=".post_share"></ng-content></a></li>
             </ul>
             <br>
         </div>

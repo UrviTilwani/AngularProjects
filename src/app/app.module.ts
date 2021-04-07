@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './modules/core/components/header/header.component';
@@ -28,6 +27,7 @@ import { AddressMapComponent } from './modules/contact-us/components/address-map
 import { BlogEntriesPostComponent } from './modules/blog-entries/components/blog-entries-post/blog-entries-post.component';
 import { CommentsComponent } from './modules/post-details/components/comments/comments.component';
 import { CommentComponent } from './modules/post-details/components/comment/comment.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,10 +56,12 @@ import { CommentComponent } from './modules/post-details/components/comment/comm
     BlogEntriesPostComponent,
     CommentsComponent,
     CommentComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
