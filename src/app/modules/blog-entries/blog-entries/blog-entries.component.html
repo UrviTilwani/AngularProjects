@@ -1,43 +1,30 @@
 <app-module-banner module_title="RECENT POSTS" module_desc="OUR RECENT BLOG ENTRIES" ></app-module-banner>
 <app-template-banner></app-template-banner>
 
-<div class="flex justify-center   space-x-0.05 w-12/12 space-y-24 ">
 
-    <div class="w-5/12 h-4/6">
-    <div class=" w-full  flex flex-row space-x-2">
+<div class="flex justify-center space-x-3 w-12/12 space-y-24 ">
+
+    <div class="w-5/12 h-4/6 ">
+    <div class=" w-full flex flex-row space-x-2 ">
 
 <!-- post-1 -->
-    <app-blog-entries-post>
-        
-        <div class="post_title">
-        <h1>LIFESTYLE</h1>
-        </div>
-  
-     <div class="post_picture">
-     <img src="/assets/blog-thumb-01.jpg" alt=""> 
-     </div>
-     
-     <div class="post_decsription">
-        Donec Tincidunt Leo</div>
-  
-     <div class="post_admin"> Admin  | </div>
-  
-     <div class="post_date">
-     <h1> May 31, 2020  | </h1> 
-     </div>
-  
-     <div class="post_comment"> <h1>  12 comments </h1></div>
-  
-     <div class="post_content"> Nullam nibh mi, tincidunt sed sapien ut, rutrum
-        hendrerit velit. Integer auctor a mauris sit amet eleifend.</div>
-  
-     <div class="post_tag"> Beauty, Nature </div>
-  
-    </app-blog-entries-post> 
+<div class="grid grid-cols-2 grid-rows-3 space-x-2.5 ">
+   <app-blog-entries-post *ngFor ="let item of data">
+   
+   <img class="post_picture" src="{{item.image}}">
+   <div class="post_title">{{item.post_title}}</div>
+   <div class="post_decsription">{{item.post_decsription}}</div>
+   <div class="post_admin">{{item.post_admin}}</div>
+   <div class="post_date">{{item.post_date}}</div>
+   <div class="post_comment">{{item.post_comment}}</div>
+   <div class="post_content">{{item.post_content}}</div>
+   <div class="post_tag">{{item.post_tag}}</div>
+   </app-blog-entries-post> 
 
-    <!-- post-2 -->
 
-    <app-blog-entries-post>
+</div>
+
+    <!-- <app-blog-entries-post>
         
         <div class="post_title">
         <h1>LIFESTYLE</h1>
@@ -69,7 +56,6 @@
 
     <div class="flex flex-row space-x-3">
 
-    <!-- post-3 -->
     <app-blog-entries-post>
         
         <div class="post_title">
@@ -98,8 +84,7 @@
   
     </app-blog-entries-post> 
    
-    <!-- post-4 -->
-    <app-blog-entries-post>
+   <app-blog-entries-post>
         
         <div class="post_title">
         <h1>LIFESTYLE</h1>
@@ -129,9 +114,9 @@
     
     </div>
 
-    <div class="flex flex-row space-x-3">
-        <!-- post-5 -->
-        <app-blog-entries-post>
+   <div class="flex flex-row space-x-3">
+
+   <app-blog-entries-post>
         
             <div class="post_title">
             <h1>LIFESTYLE</h1>
@@ -159,7 +144,7 @@
       
         </app-blog-entries-post> 
     
-    <!-- post-6     -->
+
     <app-blog-entries-post>
         
         <div class="post_title">
@@ -186,9 +171,9 @@
   
      <div class="post_tag"> Beauty, Nature </div>
   
-    </app-blog-entries-post> 
+    </app-blog-entries-post> -->
         </div>
-</div>
+</div> 
 
 
     <div class="flex flex-col w-96 pl-24">
@@ -198,4 +183,27 @@
     <app-tag-clouds></app-tag-clouds>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 

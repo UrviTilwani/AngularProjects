@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UsersService } from 'src/app/users.service';
 @Component({
   selector: 'app-blog-entries',
   templateUrl: './blog-entries.component.html',
@@ -7,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogEntriesComponent implements OnInit {
 
-  constructor() { }
+  data:any = [];
+  
+  constructor(private user:UsersService) { 
 
+    this.user.getData().subscribe(data=>{
+      console.warn(data);
+      this.data = data;
+    })
+  }
+ 
   ngOnInit(): void {
   }
 

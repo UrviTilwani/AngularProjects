@@ -7,10 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BlogEntriesPostComponent implements OnInit {
 
+ 
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+ 
   // @Input() post_picture : string ="";
   // @Input() post_title : string="";
   // @Input() post_decsription : string="";
@@ -20,4 +24,6 @@ export class BlogEntriesPostComponent implements OnInit {
   // @Input() post_content : string="";
   // @Input() post_tag : string="";
 
+ 
+  
 }
