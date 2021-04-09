@@ -9,7 +9,7 @@
 
 <!-- post-1 -->
 <div class="grid grid-cols-2 grid-rows-3 space-x-2.5 ">
-   <app-blog-entries-post *ngFor ="let item of data">
+   <app-blog-entries-post *ngFor ="let item of data; let i=index" [index]="i" (sendIndex)="receiveIndex($event)">
    
    <img class="post_picture" src="{{item.image}}">
    <div class="post_title">{{item.post_title}}</div>
@@ -19,11 +19,11 @@
    <div class="post_comment">{{item.post_comment}}</div>
    <div class="post_content">{{item.post_content}}</div>
    <div class="post_tag">{{item.post_tag}}</div>
+   <div class="post_Delete_btn"></div>
    </app-blog-entries-post> 
 
-
 </div>
-
+   
     <!-- <app-blog-entries-post>
         
         <div class="post_title">

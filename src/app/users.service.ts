@@ -9,7 +9,7 @@ export class UsersService {
   constructor(private http:HttpClient) { }
 
   getData(){
-    let url="https://api.mocki.io/v1/cc043cd7";
+    let url="https://api.mocki.io/v1/99933c38";
     return this.http.get(url);
   }
 }

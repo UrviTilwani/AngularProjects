@@ -16,7 +16,11 @@ export class BlogEntriesComponent implements OnInit {
       this.data = data;
     })
   }
- 
+    receiveIndex(index:number)
+    {
+      this.data.splice(index,1);
+    }
+
   ngOnInit(): void {
   }
 
