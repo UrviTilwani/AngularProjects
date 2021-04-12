@@ -8,8 +8,8 @@
     <div class=" w-full flex flex-row space-x-2 ">
 
 <!-- post-1 -->
-<div class="grid grid-cols-2 grid-rows-3 space-x-2.5 ">
-   <app-blog-entries-post *ngFor ="let item of data; let i=index" [index]="i" (sendIndex)="receiveIndex($event)">
+<div class="grid grid-cols-2 ">
+   <app-blog-entries-post class="pb-5 px-3" *ngFor ="let item of data; let i=index" [index]="i" (sendIndex)="receiveIndex($event)">
    
    <img class="post_picture" src="{{item.image}}">
    <div class="post_title">{{item.post_title}}</div>
@@ -24,161 +24,34 @@
 
 </div>
    
-    <!-- <app-blog-entries-post>
-        
-        <div class="post_title">
-        <h1>LIFESTYLE</h1>
-        </div>
   
-     <div class="post_picture">
-     <img src="/assets/blog-thumb-02.jpg" alt=""> 
-     </div>
-     
-     <div class="post_decsription">
-        Suspendisse Et Metus</div>
-  
-     <div class="post_admin"> Admin  | </div>
-  
-     <div class="post_date">
-     <h1> May 22, 2020  | </h1> 
-     </div>
-  
-     <div class="post_comment"> <h1>  26 comments </h1></div>
-  
-     <div class="post_content"> Nullam nibh mi, tincidunt sed sapien ut, rutrum
-        hendrerit velit. Integer auctor a mauris sit amet eleifend.</div>
-  
-     <div class="post_tag"> Beauty, Nature </div>
-  
-    </app-blog-entries-post> 
-    
-    </div>
-
-    <div class="flex flex-row space-x-3">
-
-    <app-blog-entries-post>
-        
-        <div class="post_title">
-        <h1>LIFESTYLE</h1>
-        </div>
-  
-     <div class="post_picture">
-     <img src="/assets/blog-thumb-03.jpg" alt=""> 
-     </div>
-     
-     <div class="post_decsription">
-        Donec Tincidunt Leo</div>
-  
-     <div class="post_admin"> Admin  | </div>
-  
-     <div class="post_date">
-     <h1> May 18, 2020  | </h1> 
-     </div>
-  
-     <div class="post_comment"> <h1>  42 comments </h1></div>
-  
-     <div class="post_content"> Nullam nibh mi, tincidunt sed sapien ut, rutrum
-        hendrerit velit. Integer auctor a mauris sit amet eleifend.</div>
-  
-     <div class="post_tag"> Beauty, Nature </div>
-  
-    </app-blog-entries-post> 
-   
-   <app-blog-entries-post>
-        
-        <div class="post_title">
-        <h1>LIFESTYLE</h1>
-        </div>
-  
-     <div class="post_picture">
-     <img src="/assets/blog-thumb-04.jpg" alt=""> 
-     </div>
-     
-     <div class="post_decsription">
-        Mauris Ac Dolor Ornare</div>
-  
-     <div class="post_admin"> Admin  | </div>
-  
-     <div class="post_date">
-     <h1> May 16, 2020  | </h1> 
-     </div>
-  
-     <div class="post_comment"> <h1>  28 comments </h1></div>
-  
-     <div class="post_content"> Nullam nibh mi, tincidunt sed sapien ut, rutrum
-        hendrerit velit. Integer auctor a mauris sit amet eleifend.</div>
-  
-     <div class="post_tag"> Beauty, Nature </div>
-  
-    </app-blog-entries-post> 
-    
-    </div>
-
-   <div class="flex flex-row space-x-3">
-
-   <app-blog-entries-post>
-        
-            <div class="post_title">
-            <h1>LIFESTYLE</h1>
-            </div>
-      
-         <div class="post_picture">
-         <img src="/assets/blog-thumb-05.jpg" alt=""> 
-         </div>
-         
-         <div class="post_decsription">
-            Donec Tincidunt Leo</div>
-      
-         <div class="post_admin"> Admin  | </div>
-      
-         <div class="post_date">
-         <h1> May 12, 2020  | </h1> 
-         </div>
-      
-         <div class="post_comment"> <h1>  16 comments </h1></div>
-      
-         <div class="post_content"> Nullam nibh mi, tincidunt sed sapien ut, rutrum
-            hendrerit velit. Integer auctor a mauris sit amet eleifend.</div>
-      
-         <div class="post_tag"> Beauty, Nature </div>
-      
-        </app-blog-entries-post> 
-    
-
-    <app-blog-entries-post>
-        
-        <div class="post_title">
-        <h1>LIFESTYLE</h1>
-        </div>
-  
-     <div class="post_picture">
-     <img src="/assets/blog-thumb-06.jpg" alt=""> 
-     </div>
-     
-     <div class="post_decsription">
-        Mauris Ac Dolor Ornare</div>
-  
-     <div class="post_admin"> Admin  | </div>
-  
-     <div class="post_date">
-     <h1> May 10, 2020  | </h1> 
-     </div>
-  
-     <div class="post_comment"> <h1>  3 comments </h1></div>
-  
-     <div class="post_content"> Nullam nibh mi, tincidunt sed sapien ut, rutrum
-        hendrerit velit. Integer auctor a mauris sit amet eleifend.</div>
-  
-     <div class="post_tag"> Beauty, Nature </div>
-  
-    </app-blog-entries-post> -->
         </div>
 </div> 
 
+<div class="flex flex-col w-96 pl-24">
 
-    <div class="flex flex-col w-96 pl-24">
-    <app-post-search></app-post-search>
-    <app-recent-post></app-recent-post>
+   <div>
+
+   <h1 class="text-lg tracking-wide font-semibold space-y-6 pb-2 pt-5 border-b 
+   border-gray-200 text-black">RECENT POSTS</h1> 
+
+   <div class="mr-24">
+      <input type="search" [(ngModel)]="value" (ngModelChange)="searchData()" name="searchbox"
+       placeholder="TYPE TO SEARCH..." 
+      class="placeholder-opacity-25 border-1 border-gray-300 text-sm w-72
+      outline-none focus:outline-none" >
+   </div>
+  
+   <app-recent-post *ngFor = "let item of recent_post" >
+      <!-- <div *ngIf=" i<3 "> -->
+        
+         <div class="RecentPostTitle">{{item.title}}</div>
+         <div class="PostDate">{{item.date}}</div>
+         
+      <!-- </div> -->
+   </app-recent-post>
+   </div>
+
     <app-catagories></app-catagories>
     <app-tag-clouds></app-tag-clouds>
     </div>

@@ -13,5 +13,12 @@ export class AppComponent {
     this.user.getData().subscribe(data=>{
       console.warn(data);
     })
+
+      this.user.postData().subscribe(recent_post=>{
+      console.warn(recent_post);
+    })
+
+   
+  
   }
 }

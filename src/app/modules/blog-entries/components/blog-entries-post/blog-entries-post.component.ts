@@ -17,7 +17,7 @@ export class BlogEntriesPostComponent implements OnInit {
   @Output() sendIndex = new EventEmitter<any>();
   //sendIndex will pass the index to parent 
 
-  deletePost(i:any)
+  deletePost()
   {
     this.sendIndex.emit(this.index);
   } 

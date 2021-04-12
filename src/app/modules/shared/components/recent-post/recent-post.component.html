@@ -1,17 +1,19 @@
-<div class="mt-5 space-y-7">
-<h1 class="text-lg tracking-wide font-semibold space-y-6 pb-2 pt-5 border-b border-gray-200 text-black">RECENT POSTS</h1> 
+<div class="mt-5">
 <ul class="space-y-3">
-    <li class="border-b border-gray-200 space-y-5 ">
-        <a href="#" class="text-lg tracking-wide font-semibold  mb-2 text-black">Vestibulum id turpis porttitor sapien facilisis scelerisque</a> <br>
-        <a href="#" class="text-gray-400 text-sm font-normal  mt-3">May 31, 2020</a>
-    </li>
-    <li class="border-b border-gray-200 ">
-        <a href="#" class="text-lg tracking-wide font-semibold mb-2 text-black">Suspendisse et metus nec libero ultrices varius eget in risus</a> <br>
-        <a href="#" class="text-gray-400 text-sm font-normal mt-3">May 28, 2020</a>
+    <li>
+        <a href="#" class="text-lg tracking-wide font-semibold  mb-2 text-black"><ng-content select=".RecentPostTitle"></ng-content></a> <br>
+        <a href="#" class="text-gray-400 text-sm font-normal  mt-3"><ng-content select=".PostDate"></ng-content></a>
     </li>
     <li>
-        <a href="#" class="text-lg tracking-wide font-semibold mb-2 text-black">Swag hella echo park leggings, shaman cornhole ethical coloring</a> <br>
-        <a href="#" class="text-gray-400 text-sm font-normal mt-3">May 14, 2020</a>
+        <a href="#" class="text-lg tracking-wide font-semibold mb-2 text-black"><ng-content select=".RecentPostTitle"></ng-content></a> <br>
+        <a href="#" class="text-gray-400 text-sm font-normal mt-3"><ng-content select=".PostDate"></ng-content></a>
+    </li>
+    <li>
+        <a href="#" class="text-lg tracking-wide font-semibold mb-2 text-black"><ng-content select=".RecentPostTitle"></ng-content></a> <br>
+        <a href="#" class="text-gray-400 text-sm font-normal mt-3"><ng-content select=".PostDate"></ng-content></a>
     </li>
 </ul>
+<div class="border-b border-gray-200 -mt-16"></div>
+
+
 </div>

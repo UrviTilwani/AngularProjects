@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit ,Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-post-search',
@@ -11,5 +11,4 @@ export class PostSearchComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
